@@ -1,0 +1,1397 @@
+@import url('http://fonts.cdnfonts.com/css/samarkan');
+
+body{
+    /* background-color: bisque; */
+    background-color:  brown;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+}
+.mainBody{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 94.5rem;
+    height: 43.5rem;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+}
+.s,.l{
+    color: gold;
+    font-family: 'Samarkan', sans-serif;
+    font-size: 2rem;
+}
+.diya1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.diyaDown{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0% 0% 50% 50%;
+    background-color: #63321c;
+    right: 16rem;
+    top: 0rem;
+    box-shadow: 1px 1px 5px black;
+}
+.diyaFlame{
+    position: absolute;
+    border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-bottom: 3rem solid rgb(246, 255, 0);
+    border-radius: 50%;
+    right: 18rem;
+    top: -2.8rem;
+    box-shadow: 1px 1px 10px  rgb(246, 255, 0);
+    animation-name: fire;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.HDiwali{
+    color: bisque;
+    font-size: 5rem;
+    font-family: 'Samarkan', sans-serif;
+}
+.diya2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 87rem;
+}
+.idols{
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 100%;   
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.laxmiji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    width: 100%;
+    height: 100%;
+}
+.bodyupper{
+    position: absolute;
+    margin-top: -7rem;
+    background-color: #FF5757;
+    width: 7rem;
+    height: 6rem;
+    transform: rotate(330deg) skew(31deg);
+    z-index: 2;
+}
+.bodylower{
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    background-color: #FF666B;
+    border-radius: 120px / 70px;
+    transform: rotate(90deg);
+    margin-top: 3rem;
+    box-shadow: 0px 1px 7px black;z-index: 1;
+}
+.saree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 12rem;
+    background-color: #FFB02A;
+    z-index: 4;
+    transform: rotate(32deg);
+}
+.saree2{
+    position: absolute;
+    width: 0.8rem;
+    height: 12rem;
+    background-color: #ffffff;
+    z-index: 4;
+    transform: rotate(0deg);
+}
+.midJewel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    /* background-color: goldenrod; */
+    width: 2rem;
+    height: 10rem;
+    z-index: 4;
+    transform: rotate(90deg);
+    top: 22.5rem;
+}
+.beads{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: gold;
+    z-index: 4;
+}
+.LleftUp{
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    background-color: #FF5757;
+    left: 17rem;
+    top: 21rem;
+    transform: rotate(85deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 1;
+}
+.HOne{
+    position: absolute;
+    width: 4.5rem;
+    height: 2.2rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: -2rem;
+    top: 5.2rem;
+    transform: rotate(135deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.HTwo{
+    position: absolute;
+    width: 3.3rem;
+    height: 2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: -3.5rem;
+    top: 6.5rem;
+    transform: rotate(0deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.LleftDown{
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    background-color: #FF5757;
+    left: 18rem;
+    top: 23.5rem;
+    transform: rotate(40deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 1;
+}
+.HThree{
+    position: absolute;
+    width: 4.5rem;
+    height: 2.2rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: -1.3rem;
+    top: 5rem;
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.HFour{
+    position: absolute;
+    width: 3.3rem;
+    height: 2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: -0.5rem;
+    top: 7rem;
+    transform: rotate(70deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.coin1{
+    position: absolute;
+    z-index: 6;
+    width: 1.5rem;
+    height: 0.8rem;
+    top: 9rem;
+    border-radius: 50%;
+    background-color: #FFDE59;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+    animation-name: coins1;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.coin2{
+    position: absolute;
+    z-index: 6;
+    width: 1.5rem;
+    height: 0.8rem;
+    top: 12rem;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    background-color: #FFDE59;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+    animation-name: coins2;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.coin3{
+    position: absolute;
+    z-index: 6;
+    width: 1.5rem;
+    height: 0.8rem;
+    top: 12rem;
+    left: 2rem;
+    transform: rotate(60deg);
+    border-radius: 50%;
+    background-color: #FFDE59;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+    animation-name: coins3;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.coin4{
+    position: absolute;
+    z-index: 6;
+    width: 1.5rem;
+    height: 0.8rem;
+    top: 15rem;
+    left: 4rem;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    background-color: #FFDE59;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+    animation-name: coins4;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.LrightUp{
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    background-color: #FF5757;
+    left: 29rem;
+    top: 21rem;
+    transform: rotate(275deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 1;
+}
+.HFive{
+    position: absolute;
+    width: 4.5rem;
+    height: 2.2rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: -0.5rem;
+    top: 5.2rem;
+    transform: rotate(-135deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.HSix{
+    position: absolute;
+    width: 3.3rem;
+    height: 2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 2rem;
+    top: 6.5rem;
+    transform: rotate(170deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.LrightDown{
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    background-color: #FF5757;
+    left: 28rem;
+    top: 23.5rem;
+    transform: rotate(320deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 1;
+    
+}
+.HSeven{
+    position: absolute;
+    width: 4.5rem;
+    height: 2.2rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: -0.5rem;
+    top: 4.8rem;
+    transform: rotate(-140deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.HEight{
+    position: absolute;
+    width: 3.3rem;
+    height: 2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 2.5rem;
+    top: 5rem;
+    transform: rotate(-45deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Lhair{
+    position: absolute;
+    width: 5rem;
+	/* height: 10rem; */
+	border-left: 3rem solid transparent;
+	border-right: 3rem solid transparent;
+	border-bottom: 8rem solid black;
+    top: 17.5rem;
+    left: 18.6rem;
+    z-index: -0.5;
+
+}
+.Lface{
+    position: absolute;
+    background-color: #FFC58B;
+    width: 5rem;
+    height: 5rem;
+    z-index: 3;
+    border-radius: 50%;
+    top: 17rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Lneck{
+    position: absolute;
+    background-color: #EDBB89;
+    width: 4.2rem;
+    height: 4.2rem;
+    z-index: 2;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    top: 17.9rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496) inset;
+
+}
+.neckJewel{
+    display: flex;
+    justify-content: last baseline;
+    align-items: flex-end;
+    position: absolute;
+    /* background-color: white; */
+    width: 4rem;
+    height: 4rem;
+    z-index: 4;
+    border-radius: 50%;
+    top: 19.5rem;
+    transform: rotate(45deg);
+}
+.neckJewel2{
+    display: flex;
+    justify-content: last baseline;
+    align-items: flex-end;
+    position: absolute;
+    /* background-color: white; */
+    width: 4rem;
+    height: 4rem;
+    z-index: 4;
+    border-radius: 50%;
+    top: 19.5rem;
+    transform: rotate(310deg);
+}
+.neckBeads{
+    align-items: inherit;
+    width: 1rem;
+    height: 1rem;
+    background-color: gold;
+    border-radius: 50%;
+
+}
+.Leyebrow1{
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    border-radius: 45%;
+    border: 2px solid black;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    top: 0.95rem;
+    left: 0.9rem;
+
+}
+.Leyebrow2{
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    border-radius: 45%;
+    border: 2px solid black;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    top: 0.95rem;
+    left: 2.9rem;
+
+}
+.Leye1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.7rem;
+    left: 1.5rem;
+}
+.Leyes-outer{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 0px 10px 0px 10px;
+    transform: rotate(-45deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Leyes-inner{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Leye2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.7rem;
+    left: 3.5rem;
+    
+}
+.Lnose{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /* border: 2px solid black; */
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    top: 2.1rem;
+    left: 2.2rem;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.496);
+
+}
+.upper1{
+    position: absolute;
+    width: 1px;
+	height: 1px;
+	border-left: 6.5px solid transparent;
+	border-right: 6.5px solid transparent;
+	border-bottom: 4px solid #FF999C;
+    top: 3.4rem;
+    left: 1.8rem;
+}
+.upper2{
+    position: absolute;
+    width: 1px;
+	height: 1px;
+	border-left: 6.5px solid transparent;
+	border-right: 6.5px solid transparent;
+	border-bottom: 4px solid #FF999C;
+    /* border-radius: 10%; */
+    top: 3.4rem;
+    left: 2.45rem;
+}
+.lower{
+    position: absolute;
+    width: 1px;
+	height: 0px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 4px solid #FF666B;
+    /* border-radius: 10%; */
+    top: 3.75rem;
+    left: 1.95rem;
+    transform: rotate(180deg);
+}
+.Lmukut{
+    position: absolute;
+    width: 0rem;
+	/* height: 10rem; */
+	border-left: 2.8rem solid transparent;
+	border-right: 2.8rem solid transparent;
+	border-bottom: 5rem solid #FFB02A;
+    border-radius: 20%;
+    top: 12.7rem;
+    left: 21.3rem;
+    z-index: 4;
+    
+}
+.Lchakra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chakra1{
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    top: 12rem;
+    transform: rotate(45deg);
+    animation-name: rot1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.chakra2{
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    top: 12rem;
+    transform: rotate(0deg);
+    animation-name: rot2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.chakra3{
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    top: 12rem;
+    transform: rotate(22.5deg);
+    animation-name: rot3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.chakra4{
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    top: 12rem;
+    transform: rotate(-22.5deg);
+    animation-name: rot4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* border: 2px solid black; */
+}
+.circle{
+    position: absolute;
+    z-index: 1;
+    top: 12rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: brown;
+}
+.ear1{
+    position: absolute;
+    z-index: 6;
+    width: 3.2rem;
+    height: 0.8rem;
+    top: 18.7rem;
+    left: 20.3rem;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    background-color: gold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.ear2{
+    position: absolute;
+    z-index: 6;
+    width: 3.2rem;
+    height: 0.8rem;
+    top: 18.7rem;
+    left: 24.85rem;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    background-color: gold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+
+.lotus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.petal1{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(45deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 30rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.petal2{
+    position: absolute;
+    z-index: 4;
+    transform: rotate(55deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 31rem;
+    left: 25rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.petal3{
+    position: absolute;
+    /* z-index: 3; */
+    transform: rotate(70deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 31.5rem;
+    left: 30rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.petal4{
+    position: absolute;
+    z-index: 4;
+    transform: rotate(30deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 31rem;
+    left: 15rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.petal5{
+    position: absolute;
+    /* z-index: 0; */
+    transform: rotate(15deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 31.5rem;
+    left: 10rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Slotus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Spetal1{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(-40deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 0rem;
+    left: -1.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Spetal2{
+    position: absolute;
+    z-index: 4;
+    transform: rotate(-30deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 0% 50% 50% 50%;
+    top: -0.5rem;
+    left: -1.45rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Spetal3{
+    position: absolute;
+    /* z-index: 3; */
+    transform: rotate(-15deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0% 50% 50% 50%;
+    top: -1rem;
+    left: -1.4rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Spetal4{
+    position: absolute;
+    z-index: 4;
+    transform: rotate(-55deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 0.5rem;
+    left: -1.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Spetal5{
+    position: absolute;
+    /* z-index: 0; */
+    transform: rotate(-70deg);
+    background-color: #f29ca9;
+    border: 2px solid #cf6c7b;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0% 50% 50% 50%;
+    top: 1rem;
+    left: -1.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Sstem{
+    width: 0.5rem;
+    height: 1.5rem;
+    background-color: rgb(101, 24, 24);
+    transform: rotate(-85deg);
+}
+
+
+.ganeshji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: teal; */
+    width: 100%;
+    height: 100%;
+}
+.GmainBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.5rem;
+    height: 15.5rem;
+    background-color: #00C2CB;
+    box-shadow: 0px 1px 7px black;
+    border-radius: 50%;
+    z-index: 2;
+}
+.GlowerBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.GThigh1{
+    position: absolute;
+    width: 170px;
+    height: 85px;
+    background-color: #FF666B;
+    border-radius: 120px / 70px;
+    transform: rotate(40deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 0;
+    top: 5rem;
+    left: -10rem;
+}
+.GThigh2{
+    position: absolute;
+    width: 170px;
+    height: 85px;
+    background-color: #FF666B;
+    border-radius: 120px / 70px;
+    transform: rotate(140deg);
+    box-shadow: 0px 1px 7px black;
+    z-index: 0;
+    top: 4rem;
+    left: 1rem;
+}
+.Gfeet1{
+    position: absolute;
+    width: 3.8rem;
+    height: 2.5rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 9rem;
+    top: 1rem;
+    transform: rotate(30deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Gfeet2{
+    position: absolute;
+    width: 3.8rem;
+    height: 2.5rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 8.5rem;
+    top: 0.5rem;
+    transform: rotate(80deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Gright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GOne{
+    position: absolute;
+    width: 5.5rem;
+    height: 3.3rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: 78rem;
+    top: 25rem;
+    transform: rotate(0deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.GTwo{
+    position: absolute;
+    width: 3.5rem;
+    height: 2.2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 81.5rem;
+    top: 24rem;
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Gleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GThree{
+    position: absolute;
+    width: 5.5rem;
+    height: 3.3rem;
+    background-color: #FFC58B;
+    border-radius: 50%;
+    left: 59rem;
+    top: 24rem;
+    transform: rotate(45deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.GFour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 3.5rem;
+    height: 2.2rem;
+    background-color: #edb780;
+    border-radius: 50%;
+    left: 58.5rem;
+    top: 22rem;
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.GItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4.6rem;
+}
+.ItemCircle{
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: brown;
+    border-radius: 50%;
+    z-index: 1;
+}
+.ItemChakra1{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: gold;
+    animation-name: rot2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.ItemChakra2{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: gold;
+    transform: rotate(22.5deg);
+    animation-name: rot3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.ItemChakra3{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: gold;
+    transform: rotate(45deg);
+    animation-name: rot1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.ItemChakra4{
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: gold;
+    transform: rotate(-22.5deg);
+    animation-name: rot4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.GFace{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    width: 0rem;
+	border-left: 4.5rem solid transparent;
+	border-right: 4.5rem solid transparent;
+	border-bottom: 8.2rem solid #edb780;
+    border-radius: 30%;
+    top: 15.5rem;
+    left: rem;
+    z-index: 4;
+    transform: rotate(180deg);
+}
+.tilak{
+    z-index: 4;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 50% 50% 0% 50%;
+    transform: rotate(45deg);
+    top: 6.5rem;
+    left: -0.15rem;
+}
+.Geyebrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GBrow1{
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    border-radius: 45%;
+    border: 2px solid black;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    top: 5.3rem;
+    left: 0.8rem;
+    transform: rotate(180deg);
+}
+.Geye1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5.5rem;
+    left: -1.2rem;
+}
+.Geyes-outer{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 0px 10px 0px 10px;
+    transform: rotate(-45deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Geyes-inner{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.GBrow2{
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    border-radius: 45%;
+    border: 2px solid black;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    top: 5.3rem;
+    left: -1.8rem;
+    transform: rotate(180deg);
+}
+.Geye2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5.5rem;
+    left: 1.3rem;
+}
+.trunk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trunkUp{
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    background-color: #edb780;
+    /* transform: rotate(-0deg); */
+}
+.trunkDown{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0% 50% 50% 50%;
+    background-color: #edb780;
+    top: -4.5rem;
+}
+.GEars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GEar1{
+    position: absolute;
+    width: 4rem;
+    height: 7rem;
+    background-color: #d7a776;
+    border-radius: 50% 10% 10% 50%;
+    top: 2rem;
+    left: -7rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Gearring1{
+    position: absolute;
+    width: 1rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: gold;
+    left: 2.5rem;
+    top: -2rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.GEar2{
+    position: absolute;
+    width: 4rem;
+    height: 7rem;
+    background-color: #d7a776;
+    border-radius: 10% 50% 50% 10%;
+    top: 2rem;
+    left: 3rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.Gearring2{
+    position: absolute;
+    width: 1rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: gold;
+    left: 0.5rem;
+    top: -2rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+.tusks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tusk1{
+    position: absolute;
+    border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-bottom: 3rem solid white;
+    border-radius: 40%;
+    transform: rotate(20deg);
+    top: -0.5rem;
+    left: 1rem;
+}
+.tusk2{
+    position: absolute;
+    width: 0.3rem;
+    border-left: 0.3rem solid transparent;
+	border-right: 0.3rem solid transparent;
+	border-bottom: 2rem solid white;
+    border-radius: 20%;
+    transform: rotate(-25deg);
+    top: 0.5rem;
+    left: -2rem;
+}
+.GMukut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GMukuttop{
+    position: absolute;
+    width: 0rem;
+	/* height: 10rem; */
+	border-left: 3.4rem solid transparent;
+	border-right: 3.4rem solid transparent;
+	border-bottom: 5.0rem solid #FFB02A;
+    border-radius: 20%;
+    top: 11rem;
+    left: 68rem;
+    z-index: 4;
+}
+.GCircle{
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: brown;
+    border-radius: 50%;
+    top: 11rem;
+    left: 68.6rem;
+    z-index: 2;
+}
+.GChakra1{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: gold;
+    top: 11rem;
+    left: 68.35rem;
+    z-index: 1;
+    transform: rotate(45deg);
+    animation-name: rot1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.GChakra2{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: gold;
+    top: 11rem;
+    left: 68.35rem;
+    z-index: 1;
+    transform: rotate(0deg);
+    animation-name: rot2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.GChakra3{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: gold;
+    top: 11rem;
+    left: 68.35rem;
+    z-index: 1;
+    transform: rotate(22.5deg);
+    animation-name: rot3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.GChakra4{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: gold;
+    top: 11rem;
+    left: 68.35rem;
+    z-index: 1;
+    transform: rotate(-22.5deg);
+    animation-name: rot4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.Gdress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.dress1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 15.5rem;
+    border-radius: 10px;
+    background-color: #FFB02A;
+    transform: rotate(45deg);
+    border: 1px solid black;
+}
+.dress2{
+    width: 1.5rem;
+    height: 15.5rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.mouse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mouseH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(160, 160, 160);
+    top: 40rem;
+    border-radius: 0% 50% 50% 50%;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.Meye{
+    position: absolute;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+.Mear1{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(160, 160, 160);
+    top: -5px;
+    left: 20px;
+    border-radius: 50% 0% 50% 50%;
+    /* border: 1px solid black; */
+}
+.Mear2{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(160, 160, 160);
+    top: -8px;
+    left: 10px;
+    border-radius: 0% 50% 50% 50%;
+    /* border: 1px solid black; */
+}
+.mouseB{
+    position: absolute;
+    width: 4.8rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(160, 160, 160);
+    top: 40.5rem;
+    left: 79rem;
+    transform: rotate(10deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+
+}
+.mouseT{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-bottom: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: 5px solid black;
+    border-radius: 50%;
+    top: 40rem;
+    left: 84rem;
+    transform: rotate(-120deg);
+    animation-name: tails;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes rot1{
+    from{transform: rotate(45deg);}
+    to{transform: rotate(405deg);}
+}
+@keyframes rot2{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes rot3{
+    from{transform: rotate(22.5deg);}
+    to{transform: rotate(382.5deg);}
+}
+@keyframes rot4{
+    from{transform: rotate(-22.5deg);}
+    to{transform: rotate(337.5deg);}
+}
+@keyframes fire{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes tails{
+    0%{transform: rotate(-120deg);}
+    50%{transform: rotate(-90deg);}
+    100%{transform: rotate(-120deg);}
+}
+@keyframes coins1{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(20deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes coins2{
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(65deg);}
+    100%{transform: rotate(45deg);}
+}
+@keyframes coins3{
+    0%{transform: rotate(60deg);}
+    50%{transform: rotate(80deg);}
+    100%{transform: rotate(60deg);}
+}
+@keyframes coins4{
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(110deg);}
+    100%{transform: rotate(90deg);}
+}
